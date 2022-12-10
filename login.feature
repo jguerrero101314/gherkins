@@ -4,4 +4,5 @@ Feature: Login
     so that I can use the app
 
 Scenario: Logging in with valid credentials
-        Given   I am at the login page
+        Given I am at the login page
+        When I fil the account email texbox with value "admin@admin.com"
