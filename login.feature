@@ -5,5 +5,5 @@ Feature: Login
 
 Scenario: Logging in with valid credentials
         Given I am at the login page
-        When I fil the account email texbox with value "admin@admin.com"
-        
+        When  I fil the account email texbox with value "admin@admin.com"
+        Then  I should be at the home page
