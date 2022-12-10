@@ -4,5 +4,6 @@ Feature: Transfer money
     so that I can fund my credit card
 
 Scenario: Customer has enough money 
+    Given   I am at the login page
 
     
