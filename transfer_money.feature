@@ -5,5 +5,6 @@ Feature: Transfer money
 
 Scenario: Customer has enough money 
     Given that the bank account has enough money 
-    When customer request transfer money between his accounts
+    When  customer request transfer money between his accounts
+    Then  the money is transferred to the second account
     
