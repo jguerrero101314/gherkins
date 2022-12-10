@@ -3,4 +3,6 @@ Feature: Transfer money
     I want to transfer funds between my accounts
     so that I can fund my credit card
 
+Scenario: Customer has enough money 
+
     
