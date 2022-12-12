@@ -24,6 +24,11 @@ Scenario: Logging in with valid credentials
         Then  I should be at the home page
         And   title of home page is "Global Position"
         But   Login Button is not present
+            """
+            Name: Alberto Palomar
+            Amount: 1000
+            Loans: 100
+            """
 
 Scenario: Loggin in with invalid credentials
         #Given  I am at the login page
