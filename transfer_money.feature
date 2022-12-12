@@ -15,3 +15,13 @@ Scenario: Customer don´t have enough money
     Given   that the bank account has not enough money
     When  customer request transfer money between his accounts
     Then  the money is no transferred to te second account
+
+Scenario Outline: Customer has enough money 
+    Given   that the bank account has <moneyFirstAccount>
+    When    customer request transfer <money> between his accounts
+    Then    the money is transferred to the second account
+
+    Examples:
+    | moneyFirstAccount | money |
+    | 1000              | 10    |
+    | 100               | 50    |
