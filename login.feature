@@ -3,6 +3,8 @@ Feature: Login
     I want to login with email and password
     so that I can use the app
 
+    Rule: An adult is 18 or older
+
 Background: Background name
         Given I am at the login page
 
