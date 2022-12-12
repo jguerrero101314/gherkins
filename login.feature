@@ -5,5 +5,9 @@ Feature: Login
 
 Scenario: Logging in with valid credentials
         Given I am at the login page
-        When  I fil the account email texbox with value "admin@admin.com"
+        When  I fill the account email texbox with value "admin@admin.com"
+        And   I fill the password texbox with  value "1234"
+        And   I click the login button
         Then  I should be at the home page
+        And   title of home page is "Global Position"
+        But   Login Button is not present
